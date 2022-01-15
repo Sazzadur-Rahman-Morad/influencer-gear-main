@@ -302,7 +302,7 @@ form input[type="submit"]:focus {
     padding: 3rem 0;
   }
   
-  .footer .icon, h2, p {
+  .footer .icon, {
     color: #fff;
     margin:.3rem
   }
