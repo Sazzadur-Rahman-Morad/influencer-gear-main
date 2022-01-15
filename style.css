@@ -115,13 +115,17 @@ Header Section Start End is here
     margin-bottom: 40px;
 }
 .image_content{
-    background-image: url(../images/Circle\ design.svg);
+    background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .image_content img{
     width:100%;
+    
+}
+.image_content:hover{
+    transition: all .3s ease-in-out;
 }
 /*------------------------------ 
  Top Banner Section End is here
@@ -215,13 +219,166 @@ Header Section Start End is here
     background-color: transparent;
     color: var(--primary-color);
     font-weight:500;
-    padding:0;
+    padding:5;
     font-size:1.2em;
 }
 .button.see_more .right_arrow{
     color: var(--primary-color);
-    font-size:1.2em;
+    font-size: 20px;
+    align-items: center;
+    align-content: center;
 }
 /*--------------------------------------------------- 
  Popular Producat Cattagory Section End is here
 ----------------------------------------------------*/
+
+
+/*--------------------------------------------------- 
+ News letter Section is Start from here
+----------------------------------------------------*/
+h1 {
+  font-weight: normal;
+  font-family:  serif;
+  color:rgb(114, 114, 114);
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+input {
+  font: 19px  Sans-serif;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px #000;
+}
+
+.page {
+  width: 500px;
+  margin: 50px auto 0;
+  padding-bottom: 50px;
+}
+
+form input,
+form input:focus {
+  padding: 10px 13px;
+  border: 0;
+  outline: 0;
+}
+
+form input[type="email"] {
+  margin-right: 15px;
+  width: 500px;
+  color: #a09f9f;
+}
+
+form input[type="submit"] {
+  padding: 10px 15px;
+  color: #c0d6db;
+  box-shadow: inset 0 0 0 transparent;
+  background: var(--primary-color);
+  background: var(--primary-color);
+  transition: all .3s ease-in-out;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+  box-shadow: inset 0 0 50px rgba(255,255,255, 0.3),
+                    0 0 10px rgba(255,255,255, 0.1);
+  color: white;
+  margin-left: 10px;
+  
+}
+  /*--------------------------------------------------- 
+ News letter Section is End here
+----------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------- 
+ Footer Section Start From here
+----------------------------------------------------*/
+.footer {
+    background-color: #0A0826;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .footer .icon, h2, p {
+    color: #fff;
+    margin:.3rem
+  }
+  .footer .icon:hover{
+    color: var(--primary-color);
+  }
+  
+  .copy-right {
+    margin-top: 0;
+    font-size: .75rem;
+  }
+  
+  .copy-right .divider {
+    display: block;
+    margin: .6rem
+  }
+/*--------------------------------------------------- 
+ Footer Section End is here
+----------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------
+ Responsibe (Desktop, Tablate, Mobile) Section is Star from here
+----------------------------------------------------------------*/
+@media screen and (max-width: 767px){
+    .desktop_navbar{
+        display:none;
+    }
+    header{
+        position: relative;
+    }
+    .mb_navbar{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #top_banner .container{
+        flex-flow: column;
+
+    }
+    .texts_content{
+        order:2;
+        padding-right:0;
+        padding-top:30px;
+        text-align:center;
+    }
+    .texts_content h1{
+        font-size:2em;
+    }
+    .texts_content p{
+        padding-right:0;
+    }
+    .image_content{
+        order:1;
+    }
+    #brand_logos .logos{
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    }
+    .product_grids{
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;;
+    
+   
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) and (orientation : portrait) {
+    /* Put your CSS here for 200px to 767px width devices (cover all mobile portrait width    */
+    .page {
+        width: 200px;
+        font-size: 8px;
+
+    }
+    #brand_logos img{
+        max-width:50px;
+        padding:10px;
+    
+    }
+}
