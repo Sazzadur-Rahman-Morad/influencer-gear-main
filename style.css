@@ -301,9 +301,14 @@ form input[type="submit"]:focus {
     text-align: center;
     padding: 3rem 0;
   }
-  
-  .footer .icon, {
-    color: #fff;
+  .color--light{
+      color: white;
+  }
+  .color--white{
+      color: white;
+  }
+  .footer .icon {
+    color: white;
     margin:.3rem
   }
   .footer .icon:hover{
